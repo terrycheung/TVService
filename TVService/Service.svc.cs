@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Text;
 using TVService.BusinessLogic;
@@ -12,7 +13,7 @@ using TVService.Util;
 
 namespace TVService
 {
-
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     [ServiceErrorBehaviour(typeof(ErrorHandler))]
     public class Service : IService
     {

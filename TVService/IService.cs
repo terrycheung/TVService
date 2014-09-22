@@ -15,7 +15,7 @@ namespace TVService
     {
         [OperationContract]
         [WebInvoke(Method = "POST",
-            ResponseFormat = WebMessageFormat.Json, UriTemplate = "Query", BodyStyle = WebMessageBodyStyle.WrappedResponse)]
+            ResponseFormat = WebMessageFormat.Json, UriTemplate = "", BodyStyle = WebMessageBodyStyle.WrappedResponse)]
         [return: MessageParameter(Name = "response")]
         List<Response> Query(Request r);
     
